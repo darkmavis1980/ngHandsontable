@@ -3,7 +3,7 @@ angular.module('ngHandsontable.directives', [])
  * Main Angular Handsontable directive
  */
 	.directive(
-	'hotTable',
+	'handsOnTable',
 	[
 		'settingFactory',
 		'autoCompleteFactory',
@@ -126,7 +126,7 @@ angular.module('ngHandsontable.directives', [])
 		function () {
 			return {
 				restrict: 'E',
-				require:'^hotTable',
+				require:'^handsOnTable',
 				scope:{},
 				controller:['$scope', function ($scope) {
 					this.setColumnOptionList = function (options) {
